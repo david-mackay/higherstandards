@@ -8,12 +8,11 @@ export function ProjectStoryPreview({ project }: { project: Project }) {
         <div className="mx-auto max-w-3xl text-center">
           <SectionLabel>Behind the work</SectionLabel>
           <h2 className="mt-3 font-serif text-2xl text-ink lg:text-3xl">
-            Screenshots coming — the story is already here
+            Screenshots coming soon
           </h2>
           <p className="mt-5 text-base leading-relaxed text-stone-600 lg:text-lg">
-            Visual walkthroughs are being prepared for this project. Until then,
-            scroll for the full case study: the constraint we solved, the
-            decisions we made, and what shipped.
+            Scroll for the full case study — what we built, why, and what
+            shipped.
           </p>
         </div>
 

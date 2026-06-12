@@ -55,15 +55,14 @@ export default function PhilosophyPage() {
       <aside className="mt-20 rounded-2xl border border-stone-200 bg-white/60 p-8 lg:p-12">
         <SectionLabel>On the name</SectionLabel>
         <h2 className="mt-4 font-serif text-2xl text-ink lg:text-3xl">
-          Standards are not arrogance — they are respect
+          Standards are respect
         </h2>
         <div className="mt-6 space-y-4 text-base leading-relaxed text-stone-600 lg:text-lg">
           <p>
-            &ldquo;Higher Standards&rdquo; is not a claim of perfection. It is a
-            commitment to the people on the other side of the screen: the teacher
-            grading on a Sunday night, the guest ordering from a pool chair, the
-            person rewriting a letter for the third time because the words have
-            to be right.
+            &ldquo;Higher Standards&rdquo; is a commitment to the people on the
+            other side of the screen: the teacher grading on a Sunday night, the
+            guest ordering from a pool chair, the person rewriting a letter for
+            the third time because the words have to be right.
           </p>
           <p>
             {studioStatement.closing}

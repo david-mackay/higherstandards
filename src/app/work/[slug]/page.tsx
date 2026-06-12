@@ -74,9 +74,8 @@ export default async function ProjectPage({ params }: Props) {
                 {project.hero}
               </p>
               <p className="mt-6 max-w-2xl border-l-2 border-accent/40 pl-5 text-sm leading-relaxed text-stone-500">
-                I design and build end-to-end — product thinking, interface
-                craft, and the systems underneath. What follows is how that
-                shows up in practice.
+                We design and build end-to-end — product thinking, interface
+                craft, and the systems underneath.
               </p>
               {project.url ? (
                 <a

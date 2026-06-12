@@ -42,20 +42,21 @@ export const projects: Project[] = [
     year: "2026",
     category: "mobile",
     excerpt:
-      "An iOS app for slow, intentional letter-writing — real pen pals, scheduled delivery, and ember letters that vanish after reading.",
-    hero: "A mailbox for the people you love, built against the grain of instant messaging.",
+      "A React Native app for slow letter-writing — pen pals, scheduled delivery, and ember letters that vanish after reading. Built to feel native on iOS.",
+    hero:
+      "I built this because there's one person in my life I wanted to flirt with. Everything else followed from trying to make letter-writing feel worth the wait.",
     stack: ["Expo", "React Native", "Clerk", "Supabase", "PostgreSQL"],
     role: "Product design, iOS development, brand voice",
     challenge:
-      "Most messaging apps optimize for speed and engagement loops. The product needed to feel like paper and ink — deliberate, warm, and free of performance anxiety.",
+      "I wanted correspondence to feel like paper and ink — deliberate, warm, and free of the pressure that comes with instant messaging.",
     approach: [
-      "Designed onboarding as a gallery of moods, not a feature tour — users should feel the tone before they create an account.",
-      "Built pen-pal discovery around real identities (@username search) so correspondence stays human, not algorithmic.",
-      "Introduced ember letters as a first-class paper style: words meant to be felt once, with a timer that starts at opening.",
-      "Wrote every system message in the voice of the product — fond, patient, never corporate.",
+      "Onboarding is a gallery of moods. You feel the tone before you create an account.",
+      "Pen-pal discovery uses real @usernames — you find a person, not an algorithm.",
+      "Ember letters are a paper style for words meant to be read once, with a timer that starts when you open them.",
+      "Every system message is written in the product's voice — fond, patient, human.",
     ],
     outcome:
-      "A shipped iOS experience where the interface gets out of the way of the letter. No read receipts. No typing indicators. Just words traveling on their own time.",
+      "A shipped app where the interface stays out of the way. No read receipts, no typing indicators — just words traveling on their own time. React Native under the hood, but I leaned into the iOS renderer because I wanted it to feel at home on iPhone.",
     principles: [
       "Restraint is a feature",
       "Voice is interface",
@@ -64,35 +65,35 @@ export const projects: Project[] = [
     color: "#8B3A3A",
     thumbnail: "/projects/letters-with-love/mailbox.png",
     walkthroughIntro:
-      "Scroll through the product as a user would experience it — from the moment a letter arrives to the ritual of writing one. Every screen is a decision about what to include, and what to leave out.",
+      "Three screens — from a letter arriving to sending one back.",
     beats: [
       {
         image: "/projects/letters-with-love/mailbox.png",
         alt: "Letters with Love mailbox screen showing a sealed letter with a wax seal",
         eyebrow: "01 · Arrival",
-        title: "A mailbox, not a feed",
+        title: "Your mailbox",
         body:
-          "The home screen greets you by name and tells you exactly what is waiting — one sealed letter, not an infinite scroll. The wax seal and rose-tinted card make arrival feel like an event. The badge on the tab is informative, not anxious: you know something is there, but nothing demands your attention before you are ready.",
+          "The home screen greets you by name and shows what's waiting — usually sealed letters. The wax seal and rose-tinted card make arrival feel like an event.",
         detail:
-          "No unread counts in aggressive red. No pull-to-refresh dopamine loop. The interface respects that correspondence has its own rhythm.",
+          "No aggressive unread counts. No pull-to-refresh loop. Correspondence has its own rhythm.",
       },
       {
         image: "/projects/letters-with-love/compose.png",
         alt: "Letters with Love compose screen with paper style picker and delivery timing options",
-        eyebrow: "02 · The ritual",
-        title: "Every choice reinforces intention",
+        eyebrow: "02 · Writing",
+        title: "Choosing the details",
         body:
-          "Writing a letter means choosing your paper, your pen pal, and when the words should arrive. Delivery delay is not a gimmick — it is the product keeping its promise that words travel on their own time. Paper styles are tactile choices, not theme settings. Even the placeholder copy asks you to take your time.",
+          "You pick your paper, your pen pal, and when the words should arrive. Delivery takes time on purpose. The paper styles feel tactile, and the placeholder copy asks you to slow down.",
         detail:
-          "Drafts auto-save per pen pal on device, with an honest path to cloud backup. The UX never pretends writing is instant.",
+          "Drafts auto-save per pen pal on device, with cloud backup when you want it.",
       },
       {
         image: "/projects/letters-with-love/outbox.png",
         alt: "Letters with Love outbox screen showing a letter in transit with relay towers, progress bar, and arrival countdown",
         eyebrow: "03 · Transit",
-        title: "Honest about the wait",
+        title: "On its way",
         body:
-          "After you send, the letter does not vanish behind a checkmark. The outbox shows it still on your desk — traveling through a chain of relay towers, with a progress bar and a real arrival countdown. You can see the journey length and when words will land. Once delivered, the letter leaves your outbox for good.",
+          "After you send, the letter stays on your desk — traveling through relay towers with a progress bar and a real arrival countdown. Once it lands, it leaves your outbox.",
       },
     ],
   },
@@ -101,11 +102,12 @@ export const projects: Project[] = [
     title: "Graider",
     url: "https://graider.vercel.app/",
     tagline: "Grading at the speed of a classroom",
-    year: "2025–2026",
+    year: "2026",
     category: "platform",
     excerpt:
-      "A teacher-first grading platform with mobile capture, stack processing, and background workers that respect how educators actually work.",
-    hero: "Turn a pile of papers into reviewed feedback — without fighting the software.",
+      "A grading platform built for teachers who work in stacks — mobile capture, batch processing, and background workers that keep up.",
+    hero:
+      "My mom is an instructor. She grades a lot of papers. I built Graider for her workflow.",
     stack: [
       "Next.js",
       "Expo",
@@ -116,15 +118,15 @@ export const projects: Project[] = [
     ],
     role: "Architecture, full-stack development, workflow design",
     challenge:
-      "Teachers grade in stacks, not one page at a time. Existing tools force linear flows that break when reality arrives: mixed orientations, multi-page answers, and batches that need to ship before Monday.",
+      "Teachers grade in stacks. Most tools assume one page at a time, which falls apart with mixed orientations, multi-page answers, and batches due before Monday.",
     approach: [
-      "Modeled grading as a wizard with clear checkpoints — pick a test, upload a stack, review matches, release results.",
-      "Separated preview from commit in the job pipeline so teachers can verify before anything touches student records.",
-      "Built a dedicated worker service with health checks and queue semantics, not cron hacks.",
-      "Designed the mobile experience for capture in the classroom, not at a desk.",
+      "Grading runs as a wizard: pick a test, upload a stack, review matches, release results.",
+      "Preview is separate from commit — teachers verify before anything touches student records.",
+      "A dedicated worker service handles the heavy lifting, with health checks and proper queue semantics.",
+      "Mobile capture is built for the classroom, where grading actually happens.",
     ],
     outcome:
-      "A platform where the heavy lifting happens asynchronously and the UI stays honest about progress. Teachers see what will happen before it happens.",
+      "Teachers see what will happen before it happens. The heavy work runs in the background, and the UI stays straight about progress.",
     principles: [
       "Match the real workflow",
       "Preview before commit",
@@ -136,11 +138,12 @@ export const projects: Project[] = [
     slug: "speedy-weedy",
     title: "Speedy Weedy",
     tagline: "Resort delivery, done with care",
-    year: "2025",
+    year: "2026",
     category: "commerce",
     excerpt:
-      "A mobile-first cannabis delivery PWA for Jamaica's resort corridor — licensed, lobby handoffs, and a checkout flow that feels native on a phone.",
-    hero: "Regulated commerce in a tourist context demands clarity, not cleverness.",
+      "A mobile-first cannabis delivery PWA for Jamaica's resort corridor — licensed, lobby handoffs, and checkout that feels native on a phone.",
+    hero:
+      "Regulated delivery for tourists who want ordering to feel effortless — licensed dispensary, pre-cleared drivers, hotel lobby handoffs.",
     stack: [
       "Next.js",
       "TypeScript",
@@ -151,15 +154,15 @@ export const projects: Project[] = [
     ],
     role: "Product design, full-stack development",
     challenge:
-      "Guests at all-inclusive resorts need ordering to feel effortless, but the business operates under real compliance constraints — licensed dispensary, pre-cleared drivers, hotel lobby logistics.",
+      "Guests at all-inclusive resorts need a simple order flow. The business runs under real compliance — licensed dispensary, vetted drivers, lobby logistics at every hotel.",
     approach: [
-      "Structured the catalog and checkout around hotel context first, so every order knows where it is going.",
-      "Used motion sparingly to mimic native sheet behavior — drawers that feel like iOS, not a website pretending.",
-      "Kept admin and customer surfaces separate with clear audience routing.",
-      "Designed for thumb reach and one-handed use throughout the purchase path.",
+      "Catalog and checkout start with hotel context, so every order knows where it's going.",
+      "Motion mimics native sheet behavior — drawers that feel like iOS.",
+      "Admin and customer surfaces are separate, with clear routing for each audience.",
+      "The whole purchase path is designed for thumb reach and one-handed use.",
     ],
     outcome:
-      "A PWA that reads as an app in the hand and a reliable system behind the counter. Commerce without the usual e-commerce noise.",
+      "A PWA that feels like an app in your hand and runs reliably behind the counter.",
     principles: [
       "Context before catalog",
       "Native feel on the web",

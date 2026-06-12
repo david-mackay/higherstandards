@@ -21,9 +21,8 @@ export default function WorkPage() {
           Past projects
         </h1>
         <p className="mt-6 text-lg leading-relaxed text-stone-600">
-          Each engagement is different in domain, but consistent in intent:
-          software that respects the person using it and the reality of their
-          day. Walk through them in order — or jump to what resonates.
+          Different domains, same bar — software that fits how people actually
+          work.
         </p>
       </header>
 

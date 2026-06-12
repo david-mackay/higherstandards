@@ -94,15 +94,14 @@ export default function HomePage() {
             </div>
             <div className="mt-8 space-y-6 text-base leading-relaxed text-stone-600 lg:mt-0 lg:text-lg">
               <p>
-                I build software for founders and small teams who care what it
-                feels like to use — not just what it does in a demo. That means
-                matching real workflows, writing copy that sounds human, and
-                treating loading states as design problems.
+                We build software for founders and small teams who care how a
+                product feels day to day — real workflows, human copy, loading
+                states that tell the truth.
               </p>
               <p>
-                The studio takes its name seriously: fewer engagements, more
-                attention per pixel. If your product needs someone who will push
-                back on feature bloat and fight for the details, we should talk.
+                Fewer engagements, more attention per pixel. If you want a team
+                that pushes back on feature bloat and sweats the details, we
+                should talk.
               </p>
               <Link
                 href="/philosophy"
