@@ -28,6 +28,7 @@ export type Project = {
   outcome: string;
   principles: string[];
   color: string;
+  url?: string;
   thumbnail?: string;
   walkthroughIntro?: string;
   beats?: ProjectBeat[];
@@ -98,6 +99,7 @@ export const projects: Project[] = [
   {
     slug: "graider",
     title: "Graider",
+    url: "https://graider.vercel.app/",
     tagline: "Grading at the speed of a classroom",
     year: "2025–2026",
     category: "platform",

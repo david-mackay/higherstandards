@@ -78,6 +78,17 @@ export default async function ProjectPage({ params }: Props) {
                 craft, and the systems underneath. What follows is how that
                 shows up in practice.
               </p>
+              {project.url ? (
+                <a
+                  href={project.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-8 inline-flex items-center gap-2 rounded-full border border-stone-300 px-5 py-2.5 text-sm font-medium text-ink transition hover:border-accent hover:text-accent"
+                >
+                  Visit live site
+                  <span aria-hidden>↗</span>
+                </a>
+              ) : null}
             </div>
 
             {hasWalkthrough && project.thumbnail ? (

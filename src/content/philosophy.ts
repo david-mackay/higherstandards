@@ -46,7 +46,7 @@ export const principles: Principle[] = [
 
 export const studioStatement = {
   headline: "Software should know what it is for.",
-  lead: "Higher Standards Software Design is a studio for products that need more than a template — mobile apps, commerce flows, educator tools, and brand-forward web experiences where the interface and the intent stay in conversation.",
+  lead: "Higher Standards is a studio for products that need more than a template — mobile apps, commerce flows, educator tools, and brand-forward web experiences. We embed with your team, understand what you actually need, push back on feature bloat, and build bespoke software that executes efficiently. Your users get something effortless — where the interface and the intent stay in conversation.",
   closing:
     "I work with founders and small teams who care about the unglamorous parts: the schema, the copy, the loading state, the moment a user decides whether to trust you. If that sounds like your project, I'd like to hear about it.",
 };

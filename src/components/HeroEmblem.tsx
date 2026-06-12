@@ -32,7 +32,7 @@ export function HeroEmblem() {
     if (!ctx) return;
 
     const reducedMotion = window.matchMedia(
-      "(prefers-reduced-motion: reduce)"
+      "(prefers-reduced-motion: reduce)",
     ).matches;
 
     const ink = cssVar("--ink", "#1c1917");
@@ -255,7 +255,7 @@ export function HeroEmblem() {
         if (entry.isIntersecting) start();
         else stop();
       },
-      { threshold: 0.1 }
+      { threshold: 0.1 },
     );
 
     const ro = new ResizeObserver(() => {
