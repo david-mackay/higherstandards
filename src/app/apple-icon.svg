@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" fill="none" role="img" aria-label="Higher Standards">
+  <rect width="180" height="180" rx="40" fill="#f7f4ef"/>
+  <g stroke="#e7e5e4" stroke-width="1" opacity="0.7">
+    <path d="M0 45h180M0 90h180M0 135h180"/>
+    <path d="M45 0v180M90 0v180M135 0v180"/>
+  </g>
+  <path d="M22 126h18" stroke="#a8a29e" stroke-width="2" stroke-linecap="round"/>
+  <path d="M22 99h12" stroke="#a8a29e" stroke-width="2" stroke-linecap="round" opacity="0.55"/>
+  <path d="M22 72h15" stroke="#a8a29e" stroke-width="2" stroke-linecap="round" opacity="0.55"/>
+  <text
+    x="92"
+    y="98"
+    text-anchor="middle"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="76"
+    font-weight="500"
+    letter-spacing="-3"
+    fill="#1c1917"
+  >HS</text>
+  <path d="M38 126h104" stroke="#8b4513" stroke-width="4" stroke-linecap="round"/>
+  <path d="M38 114v24M142 114v24" stroke="#8b4513" stroke-width="2.5" stroke-linecap="round"/>
+</svg>
